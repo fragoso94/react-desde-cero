@@ -1,2 +1,17 @@
 @import "~ed-grid";
 @import "~edteam-style-guides/edteam-style-guides";
+body{
+  background: gray;
+}
+.espacio{
+  margin: 10px;
+}
+.df-left{
+  padding-left: 70px !important;
+}
+.df-card-bg{
+  background: #ffffff;
+}
+.df-text-bg{
+  color: #000;
+}
