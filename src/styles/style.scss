@@ -7,11 +7,22 @@ body{
   margin: 10px;
 }
 .df-left{
-  padding-left: 70px !important;
+  padding-left: 0px !important;
 }
 .df-card-bg{
   background: #ffffff;
 }
 .df-text-bg{
   color: #000;
+}
+.df-espacio-abajo{
+  margin-bottom: 10px;
+}
+.df-box{
+  width: 215px;
+  height: 134px;
+}
+.df-sin-espacio{
+  margin: 0px !important;
+padding: 0px;
 }

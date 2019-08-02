@@ -19,7 +19,7 @@ const Curso = ({titulo, img, precio, profesor}) =>  (
           <img src={img} alt={titulo} />
         </div>
         <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2 df-card-bg">
-            <h3 className="t5 s-mb-2 s-center">
+            <h3 className="t6 s-mb-3 s-center">
                 {titulo}
             </h3>
             {/*<h3 className="t5 s-mb-2 s-center">
