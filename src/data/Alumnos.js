@@ -11,20 +11,6 @@ class AlumnosApp extends React.Component {
         this.state = { alumnos: [] }
     }
 
-    componentWillMount() {
-        fetch('http://127.0.0.1:8000/api/alumnos')
-            .then((response) => {
-                //console.log(response);
-                setInterval( () => {
-                    return response.json();
-                }, 1000)
-
-            })
-            .then((alumnos) => {
-                this.setState({ alumnos: alumnos })
-            })
-    }
-
     render() {
         let data =  this.state.alumnos;
         if (data.length > 0) {
@@ -44,6 +30,33 @@ class AlumnosApp extends React.Component {
             return <p className="text-center">Cargando alumnos...</p>
         }
     }
+
+    componentDidMount() {
+        setInterval( () =>{
+            fetch('http://127.0.0.1:8000/api/alumnos')
+                .then((response) => {
+                    //console.log(response);
+                    return response.json();
+                })
+                .then((alumnos) => {
+                    this.setState({ alumnos: alumnos })
+                })
+                .catch(function () {
+                    console.log("Error al hacer la petición");
+                });
+        }, 5000)
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log(prevProps);
+        console.log("--------");
+        console.log(prevState);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.intervalo)
+    }
+
 
 }
 

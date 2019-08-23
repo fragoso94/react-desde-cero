@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="550a056e-15f5-49ac-9f4f-073de081e3f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/Alumnos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Alumnos.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,7 +95,7 @@
       <workItem from="1564933018243" duration="1373000" />
       <workItem from="1564936834534" duration="256000" />
       <workItem from="1564967566656" duration="7147000" />
-      <workItem from="1566531432353" duration="82000" />
+      <workItem from="1566531432353" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="se agrego el siguiente arvhivos">
       <created>1564544313141</created>
