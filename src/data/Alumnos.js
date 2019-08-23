@@ -15,7 +15,10 @@ class AlumnosApp extends React.Component {
         fetch('http://127.0.0.1:8000/api/alumnos')
             .then((response) => {
                 //console.log(response);
-                return response.json();
+                setInterval( () => {
+                    return response.json();
+                }, 1000)
+
             })
             .then((alumnos) => {
                 this.setState({ alumnos: alumnos })
